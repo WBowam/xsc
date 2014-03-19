@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+ {% load pagination_tags %}
+<htmllang="en">
+<head>
+        <metahttp-equiv="Content-Type"content="text/html; charset=utf-8">
+        <title>{% block title %}{% endblock %}</title>
+        {% block extra_head %}
+<link href="{{STATIC_URL}}css/bootstrap.min.css" rel="stylesheet">
+        {% endblock %}
+</head>
+<bodyid="{% block body_id %}{% endblock %}">
+  <divid="body">
+    {% block body %}
+    {% block menu %}{% endblock %}
+      <div>
+        {% block content_title %}{% endblock %}
+      </div>
+      <divclass="content">
+        {% block content %}{% endblock %}
+      </div>
+    {% endblock %}
+    {% block footer %}{% endblock %}
+  </div>
+</body>
+</html>
