@@ -96,6 +96,7 @@ TEMPLATE_LOADERS = (
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -115,14 +116,14 @@ TEMPLATE_DIRS = (
     os.path.join(os.path.dirname(__file__), '../apps/educationLoans/templates').replace('\\','/'),
 )
 
-INSTALLED_APPS = (
-    'django.contrib.auth',
+INSTALLED_APPS = (  
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.sites',
+    #'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
+    #'django_admin_bootstrapped.bootstrap3',
     'django_admin_bootstrapped',
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
@@ -131,6 +132,7 @@ INSTALLED_APPS = (
     'apps.educationLoans',
     'pagination',
     'DjangoUeditor',
+    'django.contrib.auth',
 
 )
 
@@ -176,12 +178,23 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "django.core.context_processors.request",
 )
 
-''''
+
 
 UEDITOR_SETTINGS={
                 "toolbars":{           #定义多个工具栏显示的按钮，允行定义多个
                     "name1":[['source', '|','bold', 'italic', 'underline']],
-                    "name2":['fullscreen']
+                    "name2":['fullscreen'],
+                    "biglarge1":[['fullscreen', 'source', '|', 'undo', 'redo', '|',
+                'bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc', '|',
+                'rowspacingtop', 'rowspacingbottom', 'lineheight', '|',
+                'customstyle', 'paragraph', 'fontfamily', 'fontsize', '|',
+                'directionalityltr', 'directionalityrtl', 'indent', '|',
+                'justifyleft', 'justifycenter', 'justifyright', 'justifyjustify', '|', 'touppercase', 'tolowercase', '|',
+                'link', 'unlink', 'anchor', '|', 'imagenone', 'imageleft', 'imageright', 'imagecenter', '|',
+                'insertimage', 'emotion', 'scrawl', 'insertvideo', 'music', 'attachment', 'map', 'gmap', 'insertframe','insertcode', 'webapp', 'pagebreak', 'template', 'background', '|',
+                'horizontal', 'date', 'time', 'spechars', 'snapscreen', 'wordimage', '|',
+                'inserttable', 'deletetable', 'insertparagraphbeforetable', 'insertrow', 'deleterow', 'insertcol', 'deletecol', 'mergecells', 'mergeright', 'mergedown', 'splittocells', 'splittorows', 'splittocols', 'charts', '|',
+                'print', 'preview', 'searchreplace', 'help', 'drafts']]
                 },
                 "images_upload":{
                     "allow_type":"jpg,png",    #定义允许的上传的图片类型
@@ -200,4 +213,3 @@ UEDITOR_SETTINGS={
                     "path":""           #涂鸦图片默认的上传路径
                 }
             }
-'''

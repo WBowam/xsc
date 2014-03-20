@@ -1,0 +1,5 @@
+{% extends 'base.html'%}
+{% block content %}
+<img heigth="200px" width="400px" src="/media/{{ item.photo }}">
+{{item.content|safe}}
+{% endblock %}
