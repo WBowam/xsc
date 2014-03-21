@@ -152,7 +152,7 @@
                 <div class="smlcontent">
                     {% for i in W %}
 
-                     <a href="{% url apps.WorkingTrends.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#"{{ i.upTime|date:"Y.F.j" }}</a>
+                     <a href="{% url apps.WorkingTrends.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#">{{ i.upTime|date:"Y.F.j" }}</a>
                      {% endfor %}
                      {% for i in E %}
 
@@ -183,14 +183,16 @@
                     <span class="more"><a href="#"><img src="/static/images/more.gif" alt=""  title="" /></a></span>
                 </div>
                 <div class="smlcontent">
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a>
+                    {% for i in F2 %}
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    {% endfor %}
+                    {% for i in WS2 %}
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    {% endfor %}
+                    {% for i in C2 %}
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    {% endfor %}
+                   
                 </div>
             </div>
             <div class="work block">
@@ -199,46 +201,55 @@
                     <span class="more"><a href="#"><img src="/static/images/more.gif" alt=""  title="" /></a></span>
                 </div>
                 <div class="smlcontent">
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a>
+                   {% for i in F3 %}
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    {% endfor %}
+                    {% for i in WS3 %}
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    {% endfor %}
+                    {% for i in C3 %}
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    {% endfor %}
                 </div>
             </div>
             <div class="work block">
                 <div class="worktit">
-                    <span class="tit">最新动态</span>
+                    <span class="tit">最新公告</span>
                     <span class="more"><a href="#"><img src="/static/images/more.gif" alt=""  title="" /></a></span>
                 </div>
                 <div class="smlcontent">
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a>
+                    {% for i in F4 %}
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    {% endfor %}
+                    {% for i in WS4 %}
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    {% endfor %}
+                    {% for i in C4 %}
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    {% endfor %}
+                    {% for i in M4 %}
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    {% endfor %}
                 </div>
             </div>
             <div class="work block seblock" id="down">
                 <div class="worktit">
-                    <span class="tit">办事指南</span>
+                    <span class="tit">文档下载</span>
                     <span class="more"><a href="#"><img src="/static/images/more.gif" alt=""  title="" /></a></span>
                 </div>
                 <div class="smlcontent">
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a>
+                    {% for i in F5 %}
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    {% endfor %}
+                    {% for i in WS5 %}
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    {% endfor %}
+                    {% for i in C5 %}
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    {% endfor %}
+                    {% for i in M5 %}
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    {% endfor %}
                 </div>
             </div>
             <div class="work block seblock">
@@ -247,19 +258,14 @@
                     <span class="more"><a href="#"><img src="/static/images/more.gif" alt=""  title="" /></a></span>
                 </div>
                 <div class="smlcontent">
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a><br />
-                    <a href="#">123</a>
+                    {% for i in O6 %}
+                    <a href="#">{{ i.question|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    {% endfor %}
                 </div>
             </div>
             <div class="work block seblock">
                 <div class="worktit">
-                    <span class="tit">招聘信息</span>
+                    <span class="tit">关于我们</span>
                     <span class="more"><a href="#"><img src="/static/images/more.gif" alt=""  title="" /></a></span>
                 </div>
                 <div class="smlcontent">
