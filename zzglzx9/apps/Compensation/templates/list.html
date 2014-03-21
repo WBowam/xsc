@@ -1,0 +1,20 @@
+{% extends 'base.html'%}
+{% block content %}
+<div>
+<h1>Tags:</h1>
+<div id="listTop">
+	<strong>筛选：</strong>
+	<a name="all" href="{% url apps.Compensation.views.list name='all' %}" class="_fw-7 _t-f">所有</a>&nbsp;
+	<a name="xggg" href="{% url apps.Compensation.views.list name='xggg' %}" class="_t-f">资助管理</a>&nbsp;
+	<a name="gzdt" href="{% url apps.Compensation.views.list name='gzdt' %}" class="_t-f">勤工助学</a>&nbsp;
+	<a name="zzzc" href="{% url apps.Compensation.views.list name='zzzc' %}" class="_t-f">助学贷款</a>&nbsp;
+	<a name="bszn" href="{% url apps.Compensation.views.list name='bszn' %}" class="_t-f">医疗保险</a>&nbsp;
+	<a name='wdxz' href="{% url apps.Compensation.views.list name='wdxz' %}" class="_t-f">补偿贷偿</a>
+	<a name='other' href="{% url apps.Compensation.views.list name='other' %}" class="_t-f">其他</a>
+	</div></div>
+<br><hr>
+{% for item in li %}
+<div class="span10"><a href="{% url apps.Compensation.views.detail item.id %}">{{item.title|safe}}</a>---</div>
+{% endfor %}
+{% endblock %}
+

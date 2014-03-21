@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}测试ModelForm{% endblock %}
+{% block content %}
+    <form method="POST" action="{% url apps.OnlineQ.views.question %}">{% csrf_token %}
+        <table>
+            {{form}}
+            <tr><td><input type="submit" value="提问" /></td><td><input type="reset" value="重置"/></td><td></td></tr>
+        </table>
+    </form>
+{% endblock %}

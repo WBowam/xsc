@@ -1,0 +1,72 @@
+﻿/*块标题样式*/
+.tit
+{
+    font-size:14px;
+    font-family:@微软雅黑;
+    font-weight:bolder;
+    float:left;
+    margin-left:10px;
+    margin-top:10px;
+    }
+.more
+{
+    float:right;
+    margin-right:15px;
+    margin-top:13px;
+    }
+.smlcontent
+{
+    font-family:@经典特黑简;
+    font-size:14px;
+    color:black;
+    margin-left:10px;
+    margin-top:10px;
+    float:left;
+}
+.time
+{
+    text-align:right;
+    }
+.block
+{
+    margin-top:0px;
+    float:left;
+    margin-left:0px;
+    width:312px;
+    }
+.seblock
+{
+    margin-top:20px;
+    }
+.sblock1
+{
+    margin-top:-500px;
+    margin-left:650px;
+    width:350px;
+    }
+.sblock2
+{
+    margin-top:-250px;
+    margin-left:650px;
+    width:350px;
+    }
+#scontent
+{
+    margin-left:380px;
+    margin-top:-420px;
+    }
+.list
+{
+    height:300px;
+    width:170px;
+    border:1px solid;
+    margin-left:90px;
+    margin-top:140px;
+}
+.list a
+{
+    font-family:微软雅黑;
+    font-size:16px;
+    line-height:30px;
+    text-align:center;
+    }

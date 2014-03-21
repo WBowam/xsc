@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>华北电力大学学生处</title>
+    <link href="/static/css/css1css.css" type="text/css" rel="Stylesheet" />
+    <link href="/static/css/publicss.css" type="text/css" rel="Stylesheet" />
+    <script type="text/javascript" src="/static/js/jquery-1.4.2.min.js"></script>
+    <script src="/static/js/jquery-ui-1.8.6.core.widget.js"></script>
+    <script src="/static/js/jqueryui.bannerize.js"></script>
+    <script language="JavaScript">
+        window.onload = function () {
+            var lis = document.getElementById('cssdropdown').getElementsByTagName('li');
+            for (i = 0; i < lis.length; i++) {
+                var li = lis[i];
+                if (li.className == 'headlink') {
+                    li.onmouseover = function () { this.getElementsByTagName('ul').item(0).style.display = 'block'; }
+                    li.onmouseout = function () { this.getElementsByTagName('ul').item(0).style.display = 'none'; }
+                }
+            }
+        }
+        /* or with jQuery:
+        $(document).ready(function(){
+        $('#cssdropdown li.headlink').hover(
+        function() { $('ul', this).css('display', 'block'); },
+        function() { $('ul', this).css('display', 'none'); });
+        });
+        */
+        $(document).ready(function () {
+            $('#banners').bannerize({
+                shuffle: 1,
+                interval: "5"
+            });
+        });
+    </script>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+</head>
+<body>
+    <div class="topimg">
+    </div>
+    <div class="main">
+        <div style="height: 50px;">
+            <ul id="cssdropdown">
+                <li class="headlink"><a href="#">首页</a></li>
+                <li class="headlink"><a href="#">工作动态</a> </li>
+                <li class="headlink"><a href="#">助学贷款</a>
+                    <ul>
+                        <li><a href="#">相关公告</a></li>
+                        <li><a href="#">工作动态</a></li>
+                        <li><a href="#">资助政策</a></li>
+                        <li><a href="#">办事指南</a></li>
+                        <li><a href="#">项目介绍</a></li>
+                        <li><a href="#">在线问答</a></li>
+                        <li><a href="#">文档下载</a></li>
+                    </ul>
+                </li>
+                <li class="headlink"><a href="">资助项目</a>
+                    <ul>
+                        <li><a href="#">相关公告</a></li>
+                        <li><a href="#">工作动态</a></li>
+                        <li><a href="#">资助政策</a></li>
+                        <li><a href="#">办事指南</a></li>
+                        <li><a href="#">项目介绍</a></li>
+                        <li><a href="#">在线问答</a></li>
+                        <li><a href="#">文档下载</a></li>
+                    </ul>
+                </li>
+                <li class="headlink"><a href="">补偿代偿</a></li>
+                <li class="headlink"><a href="http://google.com/">勤工助学</a>
+                    <ul>
+                        <li><a href="#">相关公告</a></li>
+                        <li><a href="#">工作动态</a></li>
+                        <li><a href="#">资助政策</a></li>
+                        <li><a href="#">办事指南</a></li>
+                        <li><a href="#">招聘信息</a></li>
+                        <li><a href="#">在线问答</a></li>
+                        <li><a href="#">文档下载</a></li>
+                    </ul>
+                </li>
+                <li class="headlink"><a href="#">医疗保险</a>
+                    <ul>
+                        <li><a href="#">相关公告</a></li>
+                        <li><a href="#">工作动态</a></li>
+                        <li><a href="#">资助政策</a></li>
+                        <li><a href="#">办事指南</a></li>
+                        <li><a href="#">在线问答</a></li>
+                        <li><a href="#">文档下载</a></li>
+                    </ul>
+                </li>
+                <li class="headlink"><a href="#">在线问答</a> </li>
+                <li class="headlink"><a href="#">学生天地</a>
+                    <ul>
+                        <li><a href="#">最新动态</a></li>
+                        <li><a href="#">自务会</a></li>
+                        <li><a href="#">伙委会</a></li>
+                        <li><a href="#">诚信、自励、感恩</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <div style="margin-left:-520px;">
+                <div id="banners" class="ui-banner">
+                    <ul class="ui-banner-slides">
+                        <li><a href="#">
+                            <img src="/static/images/HeartHealthOmega.jpg" alt="" title="" /></a></li>
+                        <li><a href="#">
+                            <img src="/static/images/CellLabs.jpg" alt="" title="" /></a></li>
+                        <li><a href="#">
+                            <img src="/static/images/RoyalSpa.jpg" alt="" title="" /></a></li>
+                        <li><a href="#">
+                            <img src="/static/images/Cashback.jpg" alt="" title="" /></a></li>
+                        <li><a href="#">
+                            <img src="/static/images/StealthShield.jpg" alt="" title="" /></a></li>
+                        <li><a href="#">
+                            <img src="/static/images/IsotonixEducate.jpg" alt="" title="" /></a></li>
+                        <li><a href="#">
+                            <img src="/static/images/MotivesSimple.jpg" alt="" title="" /></a></li>
+                        <li><a href="#">
+                            <img src="/static/images/UltimateAloeKwStb.jpg" alt="" title="" /></a></li>
+                        <li><a href="#">
+                            <img src="/static/images/OPC3AllBetter.jpg" alt="" title="" /></a></li>
+                        <li><a href="#">
+                            <img src="/static/images/RoyalSpaRoyalHair.jpg" alt="" title="" /></a></li>
+                        <li><a href="#">
+                            <img src="/static/images/JubileeRoyalPartyAcai.jpg" alt="" title="" /></a></li>
+                        <li><a href="#">
+                            <img src="/static/images/WorldStores.gif" alt="" title="" /></a></li>
+                    </ul>
+                    <!--ui-banner-slides end-->
+                    <ul class="ui-banner-slogans">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                    </ul>
+                    <!--ui-banner-slogans end-->
+                </div>
+            </div>
+            <div class="work">
+                <div class="worktit">
+                    <span class="tit">工作动态</span>
+                    <span class="more"><a href="#"><img src="/static/images/more.gif" alt="" title="" /></a></span>
+                </div>
+                <div class="smlcontent">
+                    {% for i in W %}
+
+                     <a href="{% url apps.WorkingTrends.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#"{{ i.upTime|date:"Y.F.j" }}</a>
+                     {% endfor %}
+                     {% for i in E %}
+
+                     <a href="{% url apps.EducationLoans.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#">{{ i.upTime|date:"Y.F.j" }}</a>
+                     {% endfor %}
+                     {% for i in F %}
+
+                     <a href="{% url apps.FundedProjects.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#">{{ i.upTime|date:"Y.F.j" }}</a>
+                     {% endfor %}
+                     {% for i in WS %}
+
+                     <a href="{% url apps.WorkStudy.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#">{{ i.upTime|date:"Y.F.j" }}</a>
+                     {% endfor %}
+                     {% for i in M %}
+
+                     <a href="{% url apps.MedicalInsurance.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#">{{ i.upTime|date:"Y.F.j" }}</a>
+                     {% endfor %}
+                     {% for i in C %}
+
+                     <a href="{% url apps.Compensation.views.detail i.id %}">{{ i.title|slice:"30"}}</a><br />
+                     {% endfor %}
+                    
+                </div>
+            </div>
+            <div class="work block" id="guide">
+                <div class="worktit">
+                    <span class="tit">办事指南</span>
+                    <span class="more"><a href="#"><img src="/static/images/more.gif" alt=""  title="" /></a></span>
+                </div>
+                <div class="smlcontent">
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a>
+                </div>
+            </div>
+            <div class="work block">
+                <div class="worktit">
+                    <span class="tit">资助政策</span>
+                    <span class="more"><a href="#"><img src="/static/images/more.gif" alt=""  title="" /></a></span>
+                </div>
+                <div class="smlcontent">
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a>
+                </div>
+            </div>
+            <div class="work block">
+                <div class="worktit">
+                    <span class="tit">最新动态</span>
+                    <span class="more"><a href="#"><img src="/static/images/more.gif" alt=""  title="" /></a></span>
+                </div>
+                <div class="smlcontent">
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a>
+                </div>
+            </div>
+            <div class="work block seblock" id="down">
+                <div class="worktit">
+                    <span class="tit">办事指南</span>
+                    <span class="more"><a href="#"><img src="/static/images/more.gif" alt=""  title="" /></a></span>
+                </div>
+                <div class="smlcontent">
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a>
+                </div>
+            </div>
+            <div class="work block seblock">
+                <div class="worktit">
+                    <span class="tit">在线问答</span>
+                    <span class="more"><a href="#"><img src="/static/images/more.gif" alt=""  title="" /></a></span>
+                </div>
+                <div class="smlcontent">
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a>
+                </div>
+            </div>
+            <div class="work block seblock">
+                <div class="worktit">
+                    <span class="tit">招聘信息</span>
+                    <span class="more"><a href="#"><img src="/static/images/more.gif" alt=""  title="" /></a></span>
+                </div>
+                <div class="smlcontent">
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a><br />
+                    <a href="#">123</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>友情链接&nbsp;:<a href="#">华北电力大学北京校区&nbsp;&nbsp;</a>&nbsp;&nbsp;<a href="#">华北电力大学保定校区&nbsp;&nbsp;</a>&nbsp;&nbsp;<a href="#">科技学院</a></span><br />
+        <a>电话：123456789&nbsp;&nbsp;987654321&nbsp;&nbsp;传真：12346789&nbsp;&nbsp;Email：78945613@163.com</a><br />
+        <a>华北电力大学学生处&nbsp;版权所有&nbsp;&nbsp;技术支持：网络管理协会&nbsp;&nbsp;当前版本：123</a>
+    </div>
+</body>
+</html>
+
