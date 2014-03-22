@@ -13,4 +13,5 @@ urlpatterns = patterns('',
 	#url(r'^admin/', include(admin.site.urls)),
 	url(r'^list/(?P<name>[^/]+)/$',list, name='list'),
 	url(r'detail/(?P<id>[^/]+)/$',detail,name='detail'),
+	url(r'tian/$',tian,name='tian'),
 )

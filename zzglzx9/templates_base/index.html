@@ -40,50 +40,83 @@
     <div class="main">
         <div style="height: 50px;">
             <ul id="cssdropdown">
-                <li class="headlink"><a href="#">首页</a></li>
-                <li class="headlink"><a href="#">工作动态</a> </li>
-                <li class="headlink"><a href="#">助学贷款</a>
+                <li class="headlink"><a href="/">首页</a></li>
+                <li class="headlink"><a href="{% url apps.WorkingTrends.views.list name='all' %}">工作动态</a> </li>
+
+
+   
+   
+    
+    
+    
+    
+
+                <li class="headlink"><a name="all" href="{% url apps.EducationLoans.views.list name='all' %}" class="_fw-7 _t-f">助学贷款</a>
                     <ul>
-                        <li><a href="#">相关公告</a></li>
-                        <li><a href="#">工作动态</a></li>
-                        <li><a href="#">资助政策</a></li>
-                        <li><a href="#">办事指南</a></li>
-                        <li><a href="#">项目介绍</a></li>
-                        <li><a href="#">在线问答</a></li>
-                        <li><a href="#">文档下载</a></li>
+                        <li> <a name="zzgl" href="{% url apps.EducationLoans.views.list name='zzgl' %}" class="_t-f">资助管理</a></li>
+                        <li> <a name="qgzx" href="{% url apps.EducationLoans.views.list name='qgzx' %}" class="_t-f">勤工助学</a></li>
+                        <li><a name="zxdk" href="{% url apps.EducationLoans.views.list name='zxdk' %}" class="_t-f">助学贷款</a></li>
+                        <li><a name="ylbx" href="{% url apps.EducationLoans.views.list name='ylbx' %}" class="_t-f">医疗保险</a></li>
+                        <li><a name="bcdc" href="{% url apps.EducationLoans.views.list name='bcdc' %}" class="_t-f">补偿贷偿</a><br></li>
+                        <li><a name='other' href="{% url apps.EducationLoans.views.list name='other' %}" class="_t-f">其他</a></li>
+                       
+                    </ul>
+
+                </li>
+                <li class="headlink"><a name="all" href="{% url apps.FundedProjects.views.list name='all' %}" class="_fw-7 _t-f">资助项目</a>
+                    <ul>
+                        <li><a name="xggg" href="{% url apps.FundedProjects.views.list name='xggg' %}" class="_t-f">相关公告</a></li>
+                        <li><a name="gzdt" href="{% url apps.FundedProjects.views.list name='gzdt' %}" class="_t-f">工作动态</a></li>
+                        <li><a name="zzzc" href="{% url apps.FundedProjects.views.list name='zzzc' %}" class="_t-f">资助政策</a></li>
+                        <li><a name="bszn" href="{% url apps.FundedProjects.views.list name='bszn' %}" class="_t-f">办事指南</a></li>
+                        <li><a name="xmjs" href="{% url apps.FundedProjects.views.list name='xmjs' %}" class="_t-f">项目介绍</a></li>
+                        <li><a name='wdxz' href="{% url apps.FundedProjects.views.list name='wdxz' %}" class="_t-f">文档下载</a></li>
+                        <li><a name='other' href="{% url apps.FundedProjects.views.list name='other' %}" class="_t-f">其他</a></li>
                     </ul>
                 </li>
-                <li class="headlink"><a href="">资助项目</a>
-                    <ul>
-                        <li><a href="#">相关公告</a></li>
-                        <li><a href="#">工作动态</a></li>
-                        <li><a href="#">资助政策</a></li>
-                        <li><a href="#">办事指南</a></li>
-                        <li><a href="#">项目介绍</a></li>
-                        <li><a href="#">在线问答</a></li>
-                        <li><a href="#">文档下载</a></li>
+                <li class="headlink"><a href="{% url apps.Compensation.views.list name='all' %}">补偿代偿</a>
+                <ul>
+                        <li><a name="xggg" href="{% url apps.Compensation.views.list name='xggg' %}" class="_t-f">相关公告</a></li>
+                        <li><a name="gzdt" href="{% url apps.Compensation.views.list name='gzdt' %}" class="_t-f">工作动态</a></li>
+                        <li><a name="zzzc" href="{% url apps.Compensation.views.list name='zzzc' %}" class="_t-f">资助政策</a></li>
+                        <li><a name="bszn" href="{% url apps.Compensation.views.list name='bszn' %}" class="_t-f">办事指南</a></li>
+                        <li><a name='wdxz' href="{% url apps.Compensation.views.list name='wdxz' %}" class="_t-f">文档下载</a></li>
+                        <li><a name='other' href="{% url apps.Compensation.views.list name='other' %}" class="_t-f">其他</a></li>
                     </ul>
                 </li>
-                <li class="headlink"><a href="">补偿代偿</a></li>
-                <li class="headlink"><a href="http://google.com/">勤工助学</a>
+
+    
+    
+    
+    
+   
+    
+
+                <li class="headlink"><a name="all" href="{% url apps.WorkStudy.views.list name='all' %}" class="_fw-7 _t-f">勤工助学</a>
                     <ul>
-                        <li><a href="#">相关公告</a></li>
-                        <li><a href="#">工作动态</a></li>
-                        <li><a href="#">资助政策</a></li>
-                        <li><a href="#">办事指南</a></li>
-                        <li><a href="#">招聘信息</a></li>
-                        <li><a href="#">在线问答</a></li>
-                        <li><a href="#">文档下载</a></li>
+                        <li><a name="xggg" href="{% url apps.WorkStudy.views.list name='xggg' %}" class="_t-f">相关公告</a></li>
+                        <li><a name="gzdt" href="{% url apps.WorkStudy.views.list name='gzdt' %}" class="_t-f">工作动态</a></li>
+                        <li><a name="zzzc" href="{% url apps.WorkStudy.views.list name='zzzc' %}" class="_t-f">资助政策</a></li>
+                        <li><a name="bszn" href="{% url apps.WorkStudy.views.list name='bszn' %}" class="_t-f">办事指南</a></li>
+                        <li> <a name="zpxx" href="{% url apps.WorkStudy.views.list name='zpxx' %}" class="_t-f">招聘信息</a></li>
+                        <li><a name="qgzx" href="{% url apps.WorkStudy.views.list name='qgzx' %}" class="_t-f">勤工助学</a></li>
+                        <li><a name='wdxz' href="{% url apps.WorkStudy.views.list name='wdxz' %}" class="_t-f">文档下载</a></li>
                     </ul>
                 </li>
-                <li class="headlink"><a href="#">医疗保险</a>
+    
+    
+    
+    
+    
+    
+                <li class="headlink"><a name="all" href="{% url apps.MedicalInsurance.views.list name='all' %}" class="_fw-7 _t-f">医疗保险</a>
                     <ul>
-                        <li><a href="#">相关公告</a></li>
-                        <li><a href="#">工作动态</a></li>
-                        <li><a href="#">资助政策</a></li>
-                        <li><a href="#">办事指南</a></li>
-                        <li><a href="#">在线问答</a></li>
-                        <li><a href="#">文档下载</a></li>
+                        <li><a name="xggg" href="{% url apps.MedicalInsurance.views.list name='xggg' %}" class="_t-f">相关公告</a></li>
+                        <li><a name="gzdt" href="{% url apps.MedicalInsurance.views.list name='gzdt' %}" class="_t-f">工作动态</a></li>
+                        <li><a name="zzzc" href="{% url apps.MedicalInsurance.views.list name='zzzc' %}" class="_t-f">资助政策</a></li>
+                        <li><a name="bszn" href="{% url apps.MedicalInsurance.views.list name='bszn' %}" class="_t-f">办事指南</a></li>
+                        <li><a name='wdxz' href="{% url apps.MedicalInsurance.views.list name='wdxz' %}" class="_t-f">文档下载</a></li>
+                        <li><a name='other' href="{% url apps.MedicalInsurance.views.list name='other' %}" class="_t-f">其他</a></li>
                     </ul>
                 </li>
                 <li class="headlink"><a href="#">在线问答</a> </li>
@@ -147,28 +180,25 @@
             <div class="work">
                 <div class="worktit">
                     <span class="tit">工作动态</span>
-                    <span class="more"><a href="#"><img src="/static/images/more.gif" alt="" title="" /></a></span>
+                    <span class="more"><a href="{% url apps.WorkingTrends.views.list name='all' %}"><img src="/static/images/more.gif" alt="" title="" /></a></span>
                 </div>
                 <div class="smlcontent">
                     {% for i in W %}
 
-                     <a href="{% url apps.WorkingTrends.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#">{{ i.upTime|date:"Y.F.j" }}</a>
+                     <a href="{% url apps.WorkingTrends.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#">{{ i.upTime|date:"Y.m.d" }}</a>
                      {% endfor %}
-                     {% for i in E %}
-
-                     <a href="{% url apps.EducationLoans.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#">{{ i.upTime|date:"Y.F.j" }}</a>
-                     {% endfor %}
+                     
                      {% for i in F %}
 
-                     <a href="{% url apps.FundedProjects.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#">{{ i.upTime|date:"Y.F.j" }}</a>
+                     <a href="{% url apps.FundedProjects.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#">{{ i.upTime|date:"Y.m.d" }}</a>
                      {% endfor %}
                      {% for i in WS %}
 
-                     <a href="{% url apps.WorkStudy.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#">{{ i.upTime|date:"Y.F.j" }}</a>
+                     <a href="{% url apps.WorkStudy.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#">{{ i.upTime|date:"Y.m.d" }}</a>
                      {% endfor %}
                      {% for i in M %}
 
-                     <a href="{% url apps.MedicalInsurance.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#">{{ i.upTime|date:"Y.F.j" }}</a>
+                     <a href="{% url apps.MedicalInsurance.views.detail i.id %}">{{ i.title|slice:"30" }}</a><br /><a href="#">{{ i.upTime|date:"Y.m.d" }}</a>
                      {% endfor %}
                      {% for i in C %}
 
@@ -184,13 +214,13 @@
                 </div>
                 <div class="smlcontent">
                     {% for i in F2 %}
-                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.m.d" }}</span><br />
                     {% endfor %}
                     {% for i in WS2 %}
-                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.m.d" }}</span><br />
                     {% endfor %}
                     {% for i in C2 %}
-                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.m.d" }}</span><br />
                     {% endfor %}
                    
                 </div>
@@ -202,13 +232,13 @@
                 </div>
                 <div class="smlcontent">
                    {% for i in F3 %}
-                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.m.d" }}</span><br />
                     {% endfor %}
                     {% for i in WS3 %}
-                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.m.d" }}</span><br />
                     {% endfor %}
                     {% for i in C3 %}
-                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.m.d" }}</span><br />
                     {% endfor %}
                 </div>
             </div>
@@ -219,16 +249,16 @@
                 </div>
                 <div class="smlcontent">
                     {% for i in F4 %}
-                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.m.d" }}</span><br />
                     {% endfor %}
                     {% for i in WS4 %}
-                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.m.d" }}</span><br />
                     {% endfor %}
                     {% for i in C4 %}
-                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.m.d" }}</span><br />
                     {% endfor %}
                     {% for i in M4 %}
-                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.m.d" }}</span><br />
                     {% endfor %}
                 </div>
             </div>
@@ -239,16 +269,16 @@
                 </div>
                 <div class="smlcontent">
                     {% for i in F5 %}
-                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.m.d" }}</span><br />
                     {% endfor %}
                     {% for i in WS5 %}
-                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.m.d" }}</span><br />
                     {% endfor %}
                     {% for i in C5 %}
-                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.m.d" }}</span><br />
                     {% endfor %}
                     {% for i in M5 %}
-                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    <a href="#">{{ i.title|slice:"13" }}</a><span>{{ i.upTime|date:"Y.m.d" }}</span><br />
                     {% endfor %}
                 </div>
             </div>
@@ -259,7 +289,7 @@
                 </div>
                 <div class="smlcontent">
                     {% for i in O6 %}
-                    <a href="#">{{ i.question|slice:"13" }}</a><span>{{ i.upTime|date:"Y.F.j" }}</span><br />
+                    <a href="#">{{ i.question|slice:"13" }}</a><span>{{ i.upTime|date:"Y.m.d" }}</span><br />
                     {% endfor %}
                 </div>
             </div>

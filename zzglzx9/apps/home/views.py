@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from django.shortcuts import render
 #from PIL import Image
 
@@ -14,12 +15,12 @@ from apps.OnlineQ.models import Tab as O_Tab
 
 def home(request):
 	###WorkingTrends
-	W=W_Tab.objects.all()[0:3]
-	E=E_Tab.objects.filter(category='gztd')[0:2]
-	F=F_Tab.objects.filter(category='gzdt')[0:1]
-	WS=WS_Tab.objects.filter(category='gzdt')[0:1]
-	M=M_Tab.objects.filter(category='gzdt')[0:1]
-	C=C_Tab.objects.filter(category='gzdt')[0:1]
+	W=W_Tab.objects.all()[0:2]
+	#E=E_Tab.objects.filter(category='gztd')[0:3]
+	F=F_Tab.objects.filter(category='gzdt')[0:2]
+	WS=WS_Tab.objects.filter(category='gzdt')[0:2]
+	M=M_Tab.objects.filter(category='gzdt')[0:2]
+	C=C_Tab.objects.filter(category='gzdt')[0:2]
 	###Work guide
 	F2=F_Tab.objects.filter(category='bszn')[0:4]
 	WS2=WS_Tab.objects.filter(category='bszn')[0:3]
@@ -43,7 +44,6 @@ def home(request):
 	O6=O_Tab.objects.all()[0:10]
 	dic={
 		'W':W,
-		'E':E,
 		'F':F,
 		'WS':WS,
 		'M':M,
@@ -72,10 +72,12 @@ def home(request):
 
 
 
-
-
-
-
+'''
+def tian(request):
+	t=W_Tab(title='武汉大学医疗保险及公费报销领款名单',content='以下同学在近期内凭身份证和学生证到学生资助中心(工学部团委一楼)领取到账款项。如他人带领，请同时携带领取人的身份证。详情请咨询学生资助管理中心68772014.经济与管理学院   05级    王  峮新闻与传播学院   05级    孙  欣数学与统计学院   05级    邢周华水利水电学院     05级    李文娟电子信息学院     05级    文  舰    如有同学认识以上同学，请麻烦转告')
+	t.save()
+	return render(request,'index.html')
+'''
 
 
 

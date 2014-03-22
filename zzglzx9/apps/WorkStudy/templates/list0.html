@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% block content %}
+<div>
+<h1>Tags:</h1>
+<div id="listTop">
+	<strong>筛选：</strong>
+	<a name="all" href="{% url apps.WorkStudy.views.list name='all' %}" class="_fw-7 _t-f">所有</a>&nbsp;
+	<a name="zzgl" href="{% url apps.WorkStudy.views.list name='zzgl' %}" class="_t-f">资助管理</a>&nbsp;
+	<a name="qgzx" href="{% url apps.WorkStudy.views.list name='qgzx' %}" class="_t-f">勤工助学</a>&nbsp;
+	<a name="zxdk" href="{% url apps.WorkStudy.views.list name='zxdk' %}" class="_t-f">助学贷款</a>&nbsp;
+	<a name="ylbx" href="{% url apps.WorkStudy.views.list name='ylbx' %}" class="_t-f">医疗保险</a>&nbsp;
+	<a name='bcdc' href="{% url apps.WorkStudy.views.list name='bcdc' %}" class="_t-f">补偿贷偿</a>
+	<a name='other' href="{% url apps.WorkStudy.views.list name='other' %}" class="_t-f">其他</a>
+	</div></div>
+<br><hr>
+{% for item in li %}
+<div class="span10"><a href="{% url apps.WorkStudy.views.detail item.id %}">{{item.title|safe}}</a>---</div>
+{% endfor %}
+{% endblock %}
